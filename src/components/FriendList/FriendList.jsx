@@ -1,10 +1,12 @@
-const FriendList = ({friend: {avatar, name, isOnline}}) => {
-return <div>
-<img src={avatar} alt="Avatar" width="48" />
-<p>{name}</p>
-<p>{isOnline ? "true": "false"}</p>
-</div>
+import clsx from "clsx";
+import css from "./FriendList.module.css"
 
+const FriendList = ({friend: {avatar, name, isOnline}}) => {
+return <div className={css.avatarUser}>
+<img className={css.avatarImg} src={avatar} alt="Avatar" width="48" />
+<p className={css.avatarDescription}>{name}</p>
+<p className={clsx(css.avatarIsOffline, {[css.avatarIsOnline]: isOnline})}>{isOnline ? "Online": "Offline"}</p>
+</div>
 };
 
 export default FriendList;

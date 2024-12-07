@@ -19,11 +19,11 @@ function App() {
         location={userData.location}
         image={userData.avatar}
         stats={userData.stats}/>
-        <ul>
+        
+        <ul className="friendsList">
           {friends.map(item => {
-            console.log(item);
             
-            return <li key ={item.id}><FriendList friend={item}/></li>
+            return <li className="friendsItem" key ={item.id}><FriendList friend={item}/></li>
           })}
         </ul>
     
