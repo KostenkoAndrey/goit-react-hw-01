@@ -1,0 +1,58 @@
+.userList{
+    width: 420px;
+    margin: 0 auto 40px;
+    border: 4px solid black;
+    border-radius: 8px; 
+    background-color: #e2e0e0;
+}
+
+.userListImage{
+    padding: 15px;
+}
+
+.userImg{
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: #393939;
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto 10px;
+}
+
+.userDescription{
+   color: black;
+}
+
+.userDescription:nth-child(2) {
+    font-weight: bold;
+ }
+
+.userDescription:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.userContainer{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 2px solid #888686;
+    background-color:#cbcaca;
+}
+
+.containerList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.containerList:not(:last-child){
+    border-right: 2px solid #888686;
+}
+
+.containerTag{
+font-size: 24px;
+}
+.containerValues{
+    font-size: 24px;
+    font-weight: 700;
+}

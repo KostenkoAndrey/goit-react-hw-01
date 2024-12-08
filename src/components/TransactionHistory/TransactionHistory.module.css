@@ -1,0 +1,23 @@
+.tableFrom {
+width: 600px;
+margin: 40px auto 0;
+border: 2px solid black;
+border-collapse: collapse;
+}
+
+.thItems{
+text-align: center;
+background-color: #272727;
+color: #ffffff;
+width: 200px;
+border: 1px solid black;
+}
+
+.trItem:nth-child(even){
+    background-color: #b4b2b2;
+}
+
+.tdItem{
+text-align: center;
+border: 1px solid black;
+}
